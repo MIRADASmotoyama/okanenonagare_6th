@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>おかねの流れシミュレーター</title>
+<meta name="description" content="お金がどこからどこへ流れるかを、アイテムを配置して矢印でつなぎながら学べる子ども向け教材。会社・国（税金）・金融機関とのつながりも学べます。">
+<meta property="og:title" content="おかねの流れシミュレーター">
+<meta property="og:description" content="アイテムをつないで、おかねと モノ・気持ちの流れを つくってみよう！">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%B0%3C/text%3E%3C/svg%3E">
+<style>
+  *{box-sizing:border-box;}
+  html,body{
+    margin:0;
+    padding:0;
+    background:linear-gradient(180deg,#eafcff 0%, #f2fff5 55%, #f7fbef 100%);
+    color:#2c3a44;
+    font-family:'M PLUS Rounded 1c','Hiragino Maru Gothic ProN','Hiragino Kaku Gothic ProN',sans-serif;
+    min-height:100vh;
+  }
+  .page{
+    max-width:1140px;
+    margin:0 auto;
+    padding:40px 20px 60px;
+  }
+  .intro{
+    max-width:720px;
+    margin:0 auto 8px;
+    text-align:center;
+  }
+  .kicker{
+    font-size:12.5px;
+    font-weight:700;
+    letter-spacing:0.14em;
+    color:#2e86de;
+    text-transform:uppercase;
+  }
+  h1{
+    font-size:clamp(26px,4vw,36px);
+    font-weight:800;
+    color:#1d5b8a;
+    margin:8px 0 10px;
+    text-shadow:2px 2px 0 #ffffffcc;
+  }
+  .intro p{
+    font-size:15px;
+    line-height:1.8;
+    color:#3a6a8a;
+    margin:0 auto;
+  }
+  footer{
+    max-width:720px;
+    margin:18px auto 0;
+    text-align:center;
+    font-size:12.5px;
+    color:#6b8494;
+    line-height:1.9;
+  }
+  footer b{ color:#3a6a8a; }
+  @media (max-width:600px){
+    .page{ padding:28px 14px 40px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="intro">
+    <div class="kicker">Money &amp; Society</div>
+    <h1>&#x1F4B0; おかねの流れシミュレーター</h1>
+    <p>
+      アイテム（人・お店・会社）を配置して矢印でつなぐと、おかねと モノ・気持ちが
+      どちらの方向に流れるかが見えてきます。中央の「わたし」から、会社・国（税金）・
+      金融機関へと矢印をたどれば、身近な買いものの裏にある社会のしくみも学べます。
+    </p>
+  </div>
+
+  <div id="okane-money-flow-root"></div>
+
+  <footer>
+    アイテムをドラッグして動かしたり、矢印をタップしてラベルを書きこんだりしてみよう。<br>
+    「わたし・会社・国・金融機関のつながりマップ」では、各アイコンをタップすると くわしい解説とクイズが見られます。<br>
+    <b>発表をよういする</b> で あいているところを うめたら、<b>発表モード</b> で スライドにして 発表できます。
+  </footer>
+</div>
+<script src="./okane-money-flow-app.js?v=20260925"></script>
+</body>
+</html>
